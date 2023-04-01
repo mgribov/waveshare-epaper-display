@@ -155,23 +155,17 @@ def main():
         logging.error("Unable to fetch weather payload. SVG will not be updated.")
         return
 
-    weather_desc = format_weather_description(weather["description"])
 
     alert_message = get_alert_message(location_lat, location_long)
     alert_message = format_alert_description(alert_message)
 
     time_now = get_formatted_time(datetime.datetime.now())
-    time_now_font_size = "100px"
+    time_now_font_size = "47px"
 
     if len(time_now) > 6:
         time_now_font_size = str(100 - (len(time_now)-5) * 5) + "px"
 
     output_dict = {
-        'LOW_ONE': "{}{}".format(str(round(weather['temperatureMin'])), degrees),
-        'HIGH_ONE': "{}{}".format(str(round(weather['temperatureMax'])), degrees),
-        'ICON_ONE': weather["icon"],
-        'WEATHER_DESC_1': weather_desc[1],
-        'WEATHER_DESC_2': weather_desc[2],
         'TIME_NOW_FONT_SIZE': time_now_font_size,
         'TIME_NOW': time_now,
         'HOUR_NOW': datetime.datetime.now().strftime("%-I %p"),
@@ -180,6 +174,28 @@ def main():
         'ALERT_MESSAGE_VISIBILITY': "visible" if alert_message else "hidden",
         'ALERT_MESSAGE': alert_message
     }
+
+    for w in weather.values():
+        k = 'PERIOD_' + str(w['number']) + '_'
+
+        weather_desc = format_weather_description(w["shortForecast"])
+        output_dict[k + 'weather_desc_1'] = weather_desc[1]
+        output_dict[k + 'weather_desc_2'] = weather_desc[2]
+
+        for key in w:
+
+            if key in ['probabilityOfPrecipitation', 'dewpoint', 'relativeHumidity'] and type(w[key]) is dict and 'value' in w[key]:
+                val = w[key]['value']
+
+            else:
+                val = w[key]
+
+            # this = -1 in future data
+            if key == 'dewpoint':
+                val = int(val)
+                
+            output_dict[k + key] = str(val)
+
 
     logging.info(output_dict)
 
