@@ -7,7 +7,7 @@ import logging
 from weather_providers import climacell, openweathermap, metofficedatahub, metno, meteireann, accuweather, visualcrossing, weathergov, smhi
 from alert_providers import metofficerssfeed, weathergovalerts
 from alert_providers import meteireann as meteireannalertprovider
-from utility import get_formatted_time, update_svg, configure_logging, configure_locale
+from utility import get_formatted_time, update_svg, configure_logging, configure_locale, get_json_from_url
 import textwrap
 import html
 
@@ -165,7 +165,9 @@ def main():
     if len(time_now) > 6:
         time_now_font_size = str(100 - (len(time_now)-5) * 5) + "px"
 
+    pub_ip = get_json_from_url('https://api.ipify.org?format=json', {}, "cache_ip_lookup.json", 3600)
     output_dict = {
+        'PUB_IP': pub_ip['ip'],
         'TIME_NOW_FONT_SIZE': time_now_font_size,
         'TIME_NOW': time_now,
         'HOUR_NOW': datetime.datetime.now().strftime("%-I %p"),

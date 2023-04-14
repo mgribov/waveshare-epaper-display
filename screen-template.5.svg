@@ -10,7 +10,7 @@
       	</g>
    	</defs>
 
-    <text id="alertmessage" x="0" y="35" font-size="30px" style="font-weight:bold;font-size:30px;line-height:0%;font-family:'Nimbus Mono PS',monospace;text-anchor:beginning">ALERT_MESSAGE</text>
+    <text id="alertmessage" x="0" y="25" font-size="25px" style="font-weight:bold;font-size:25px;line-height:0%;font-family:'Nimbus Mono PS',monospace;text-anchor:beginning">ALERT_MESSAGE</text>
 
     <text id="textday" x="20" y="70" style="text-anchor:beginning;font-weight:600;font-size:47px;line-height:0%;font-family:sans-serif;">DAY_NAME</text>
     <text id="textdate" x="420" y="70" style="text-anchor:beginning;font-size:47px;line-height:0%;font-family:sans-serif;">DAY_ONE</text>
@@ -54,16 +54,17 @@
    	</g>
 
 	<text id="textprcblock1" x="70" y="340" font-size="20px" style="font-size:20px;line-height:0%;font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">
-    	<tspan x="70" dy="25" style="font-size:20px;fill:#000000;font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="tspan1">CAL_DATETIME_1</tspan>
-      	<tspan style="font-weight:bold;font-family:sans-serif;font-style:normal;font-stretch:normal;font-variant:normal;font-size:17px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" x="70" dy="25" id="tspan2"><![CDATA[CAL_DESC_1]]></tspan>
+    	<tspan x="70" dy="25" style="font-size:15px;fill:#000000;font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="tspan1">CAL_DATETIME_1</tspan>
+      	<tspan style="font-weight:bold;font-family:sans-serif;font-style:normal;font-stretch:normal;font-variant:normal;font-size:15px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" x="70" dy="25" id="tspan2"><![CDATA[CAL_DESC_1]]></tspan>
    	</text>
 
 	<text id="textprcblock2" x="70" y="405" font-size="20px" style="font-size:20px;line-height:0%;font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">
-    	<tspan x="70" dy="25" style="font-size:20px;fill:#000000;font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="tspan3">CAL_DATETIME_2</tspan>
-      	<tspan style="font-weight:bold;font-family:sans-serif;font-style:normal;font-stretch:normal;font-variant:normal;font-size:17px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" x="70" dy="25" id="tspan4"><![CDATA[CAL_DESC_2]]></tspan>
+    	<tspan x="70" dy="25" style="font-size:15px;fill:#000000;font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" id="tspan3">CAL_DATETIME_2</tspan>
+      	<tspan style="font-weight:bold;font-family:sans-serif;font-style:normal;font-stretch:normal;font-variant:normal;font-size:15px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" x="70" dy="25" id="tspan4"><![CDATA[CAL_DESC_2]]></tspan>
    	</text>
 
 
-	<text id="texttime" x="500" y="400" style="font-size:57px;font-weight:bold;line-height:0%;font-family:sans-serif;text-anchor:beginning">TIME_NOW</text>
+	<text id="texttime" x="500" y="380" style="font-size:50px;font-weight:bold;line-height:0%;font-family:sans-serif;text-anchor:beginning">TIME_NOW</text>
+	<text id="textip" x="380" y="440" style="font-size:48px;font-weight:bold;line-height:0%;font-family:sans-serif;text-anchor:beginning">PUB_IP</text>
 
 </svg>

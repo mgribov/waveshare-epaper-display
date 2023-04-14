@@ -15,7 +15,7 @@ configure_logging()
 # note: increasing this will require updates to the SVG template to accommodate more events
 max_event_results = 10
 
-google_calendar_id = os.getenv("GOOGLE_CALENDAR_ID", "primary")
+google_calendar_id = os.getenv("GOOGLE_CALENDAR_ID", "family16999369177895877516@group.calendar.google.com")
 outlook_calendar_id = os.getenv("OUTLOOK_CALENDAR_ID", None)
 
 caldav_calendar_url = os.getenv('CALDAV_CALENDAR_URL', None)
